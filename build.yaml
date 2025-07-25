@@ -19,3 +19,8 @@
 ---
 include:
   - board: keyboardio_preonic
+    artifact-name: keyboardio_preonic_default
+  - board: keyboardio_preonic
+    cmake-args: -DCONFIG_ZMK_STUDIO=y
+    snippet: studio-rpc-usb-uart
+    artifact-name: keyboardio_preonic_studio
