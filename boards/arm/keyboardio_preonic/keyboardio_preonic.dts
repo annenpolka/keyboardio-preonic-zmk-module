@@ -22,7 +22,7 @@
 
 	key_physical_attrs: key_physical_attrs {
 		compatible = "zmk,key-physical-attrs";
-		#size-cells = <7>;
+		#key-cells = <7>;
 	};
 
 	ortho_transform: ortho_transform {
