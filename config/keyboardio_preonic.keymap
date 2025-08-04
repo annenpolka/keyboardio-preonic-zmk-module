@@ -40,13 +40,13 @@
         rpar {
             bindings = <&kp RPAR>;
             key-positions = <23 22>;
-            layers = <1 0 4>;
+            layers = <0>;
         };
 
         lpar {
             bindings = <&kp LPAR>;
             key-positions = <18 19>;
-            layers = <0 4 1>;
+            layers = <0>;
         };
     };
 
@@ -135,67 +135,15 @@
         qwerty {
             label = "qwerty";
             bindings = <
-                                                                                                         &kp X    &mo 7     &kp K_MUTE
-&gresc               &kp N1     &kp N2    &kp N3    &kp N4  &kp N5     &kp N6         &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-&lt 9 TAB            &kp Q      &kp W     &kp E     &kp R   &kp T      &kp Y          &kp U   &kp I      &kp O    &kp P     &kp BSLH
-&mt_bs_del LCTRL 0   &kp A      &kp S     &kp D     &kp F   &kp G      &kp H          &kp J   &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
-&sk LSHFT            &kp Z      &kp X     &kp C     &kp V   &kp B      &kp N          &kp M   &kp COMMA  &kp DOT  &kp FSLH  &mt RSHIFT RET
-&none                &kp LCTRL  &kp LGUI  &kp LALT  &mo 5   &kp SPACE  &kp BACKSPACE  &mo 6   &kp LEFT   &kp UP   &kp DOWN  &kp RIGHT
+                                                                                                        &kp X    &mo 3     &kp K_MUTE
+&gresc              &kp N1     &kp N2    &kp N3    &kp N4  &kp N5     &kp N6         &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
+&lt 5 TAB           &kp Q      &kp W     &kp E     &kp R   &kp T      &kp Y          &kp U   &kp I      &kp O    &kp P     &kp BSLH
+&mt_bs_del LCTRL 0  &kp A      &kp S     &kp D     &kp F   &kp G      &kp H          &kp J   &kp K      &kp L    &kp SEMI  &kp SINGLE_QUOTE
+&sk LSHFT           &kp Z      &kp X     &kp C     &kp V   &kp B      &kp N          &kp M   &kp COMMA  &kp DOT  &kp FSLH  &mt RSHIFT RET
+&none               &kp LCTRL  &kp LGUI  &kp LALT  &mo 1   &kp SPACE  &kp BACKSPACE  &mo 2   &kp LEFT   &kp UP   &kp DOWN  &kp RIGHT
             >;
 
             sensor-bindings = <&inc_dec_kp K_VOLUME_UP K_VOLUME_DOWN>;
-        };
-
-        CMK-DH {
-            bindings = <
-                                                                        &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans
-&trans  &trans  &trans  &kp F   &kp P   &kp B   &kp J   &kp L   &kp U   &kp Y   &kp SEMI  &trans
-&trans  &trans  &kp R   &kp S   &kp T   &kp G   &kp M   &kp N   &kp E   &kp I   &kp O     &trans
-&trans  &trans  &trans  &trans  &kp D   &kp V   &kp K   &kp H   &trans  &trans  &trans    &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans    &trans
-            >;
-
-            label = "cmkdh";
-        };
-
-        CMK {
-            bindings = <
-                                                                           &trans   &trans    &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-&trans  &kp Q   &kp W   &kp F   &kp P   &kp G   &kp J   &kp L   &kp U      &kp Y    &kp SEMI  &kp BSLH
-&trans  &kp A   &kp R   &kp S   &kp T   &kp D   &kp H   &kp N   &kp E      &kp I    &kp O     &kp APOS
-&trans  &kp Z   &kp X   &kp C   &kp V   &kp B   &kp K   &kp M   &kp COMMA  &kp DOT  &kp FSLH  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans    &trans
-            >;
-
-            label = "CMK";
-        };
-
-        AS_CMK_DH {
-            bindings = <
-                                                                           &trans   &trans    &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-&trans  &kp Q   &kp W   &kp F   &kp P   &kp B   &kp J   &kp L   &kp U      &kp Y    &kp SEMI  &kp EQUAL
-&trans  &kp A   &kp R   &kp S   &kp T   &kp G   &kp M   &kp N   &kp E      &kp I    &kp O     &kp APOS
-&trans  &kp Z   &kp X   &kp C   &kp D   &kp V   &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans    &trans
-            >;
-
-            label = "AS_CMK_DH";
-        };
-
-        HRM_CMK_DH {
-            bindings = <
-                                                                           &trans   &trans    &trans
-&trans  &kp N1  &kp N2  &kp N3  &kp N4  &kp N5  &kp N6  &kp N7  &kp N8     &kp N9   &kp N0    &kp MINUS
-&trans  &kp Q   &kp W   &kp F   &kp P   &kp B   &kp J   &kp L   &kp U      &kp Y    &kp SEMI  &kp BSLH
-&trans  &kp A   &kp R   &kp S   &kp T   &kp G   &kp M   &kp N   &kp E      &kp I    &kp O     &kp APOS
-&trans  &kp Z   &kp X   &kp C   &kp D   &kp V   &kp K   &kp H   &kp COMMA  &kp DOT  &kp FSLH  &trans
-&trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans     &trans   &trans    &trans
-            >;
-
-            label = "HRM_CMK_DH";
         };
 
         lower {
@@ -227,7 +175,7 @@
         k_sys {
             bindings = <
                                                                                                             &trans  &trans  &trans
-&trans        &to 1         &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &to 0   &trans
+&trans        &to 0         &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &to 0   &trans
 &trans        &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
 &out OUT_TOG  &trans        &trans        &trans        &trans        &trans        &trans  &trans  &trans  &trans  &trans  &trans
 &bt BT_CLR    &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4  &trans  &trans  &trans  &trans  &kp S   &trans
@@ -252,7 +200,7 @@
 
         shorts {
             bindings = <
-                                                                        &trans  &trans  &trans
+                                                                                &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &kp RS(LG(N4))  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans          &trans  &trans  &trans  &trans  &trans  &trans  &trans
@@ -266,7 +214,7 @@
         reserved {
             bindings = <
                                                                         &trans  &trans  &trans
-&trans  &to 1   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 0   &trans
+&trans  &to 0   &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &to 0   &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &kp S   &trans
@@ -276,7 +224,7 @@
             label = "reserved";
         };
     };
-    
+
     /*
     sensors: sensors {
         compatible = "zmk,keymap-sensors";
@@ -289,8 +237,8 @@
         compatible = "zmk,conditional-layers";
 
         sys {
-            if-layers = <7 8>;
-            then-layer = <10>;
+            if-layers = <3 4>;
+            then-layer = <6>;
         };
     };
 };
