@@ -237,8 +237,8 @@
         compatible = "zmk,conditional-layers";
 
         sys {
-            if-layers = <3 4>;
-            then-layer = <6>;
+            if-layers = <1 2>;
+            then-layer = <3>;
         };
     };
 };
